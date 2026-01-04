@@ -2722,6 +2722,7 @@ body {
     .sessions-hero-section,
     .booking-widget-section,
     .features-section,
+    .skill-card,
     .about-section,
     .rules-section,
     .cta-section {
@@ -2797,12 +2798,12 @@ body {
         flex-shrink: 0;
     }
 
-    /* Specific modification for skill cards to be smaller/reduced */
+    /* Specific modification for skill cards to be smaller/reduced 
     .skill-cards-grid .skill-card {
-        min-width: 45%;
+        min-width: 75%;
         scroll-snap-align: center;
         flex-shrink: 0;
-    }
+    } */
 
     .skill-content {
         padding: 1rem;
