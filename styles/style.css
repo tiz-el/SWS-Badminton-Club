@@ -149,7 +149,7 @@ body {
 }
 
 .logo-img {
-    height: 5.5rem;
+    height: 5rem;
     /* Adjust based on preference */
     width: auto;
     object-fit: contain;
@@ -2742,7 +2742,6 @@ body {
 
     /* Horizontal Scroll Grids */
     .events-grid,
-    .features-grid,
     .sessions-widget-grid,
     .pricing-section {
         /* Also make pricing cards scrollable horizontally */
@@ -2760,25 +2759,20 @@ body {
     }
 
     /* Remove grid template from these if they had it */
-    /* Remove grid template from these if they had it */
     .events-grid,
-    .features-grid,
     .sessions-widget-grid,
     .pricing-section {
         grid-template-columns: none;
     }
 
     /* Scrollbar Hiding */
-    /* Scrollbar Hiding */
     .events-grid::-webkit-scrollbar,
-    .features-grid::-webkit-scrollbar,
     .sessions-widget-grid::-webkit-scrollbar,
     .pricing-section::-webkit-scrollbar {
         display: none;
     }
 
     .events-grid,
-    .features-grid,
     .sessions-widget-grid,
     .pricing-section {
         -ms-overflow-style: none;
@@ -2786,9 +2780,7 @@ body {
     }
 
     /* Card Sizing in Scroll Lists */
-    /* Card Sizing in Scroll Lists */
     .events-grid>*,
-    .features-grid>*,
     .sessions-widget-grid>*,
     .pricing-card {
         min-width: 85%;
@@ -2837,163 +2829,17 @@ body {
     }
 
     /* Adjust Session Skill Cards */
-    .skill-cards-grid {
+    .skill-cards-grid,
+    .features-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
-    .skill-card {
-        height: auto;
-    }
+    .logo-img {
+        height: 3.5rem;
+        /* Adjust based on preference */
 
-    .skill-image-wrapper {
-        height: 10rem;
-        /* Further reduced height */
-    }
-
-    /* Fix Sessions Page Padding for 480px */
-    .sessions-container {
-        padding: 0 1rem 3rem !important;
-    }
-
-    /* Fix Booking Page Padding for 480px */
-    .booking-main-layout {
-        padding: 2rem 1rem !important;
-    }
-}
-
-/* ===========================
-   Mobile-Specific Layout (max-width: 350px)
-   Horizontal scrolling for cards & Reduced Sizes
-   =========================== */
-@media (max-width: 350px) {
-
-    /* Global Reductions */
-    .hero-section,
-    .about-hero-section,
-    .sessions-hero-section,
-    .booking-widget-section,
-    .features-section,
-    .skill-card,
-    .about-section,
-    .rules-section,
-    .cta-section {
-        padding: 3rem 1rem !important;
-        min-height: auto !important;
-    }
-
-    .hero-title {
-        font-size: 2.25rem !important;
-    }
-
-    .hero-description,
-    .features-description,
-    .sessions-description {
-        font-size: 1rem !important;
-    }
-
-    /* Horizontal Scroll Grids */
-    .events-grid,
-    .features-grid,
-    .sessions-widget-grid,
-    .pricing-section {
-        /* Also make pricing cards scrollable horizontally */
-        display: flex;
-        overflow-x: auto;
-        gap: 1rem;
-        padding-bottom: 1rem;
-        margin-right: -1rem;
-        /* Edge alignment */
-        padding-right: 1rem;
-        margin-left: -1rem;
-        padding-left: 1rem;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    /* Remove grid template from these if they had it */
-    /* Remove grid template from these if they had it */
-    .events-grid,
-    .features-grid,
-    .sessions-widget-grid,
-    .pricing-section {
-        grid-template-columns: none;
-    }
-
-    /* Scrollbar Hiding */
-    /* Scrollbar Hiding */
-    .events-grid::-webkit-scrollbar,
-    .features-grid::-webkit-scrollbar,
-    .sessions-widget-grid::-webkit-scrollbar,
-    .pricing-section::-webkit-scrollbar {
-        display: none;
-    }
-
-    .events-grid,
-    .features-grid,
-    .sessions-widget-grid,
-    .pricing-section {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    /* Card Sizing in Scroll Lists */
-    /* Card Sizing in Scroll Lists */
-    .events-grid>*,
-    .features-grid>*,
-    .sessions-widget-grid>*,
-    .pricing-card {
-        min-width: 85%;
-        scroll-snap-align: center;
-        flex-shrink: 0;
-    }
-
-
-
-    .skill-content {
-        padding: 1rem;
-    }
-
-    /* Booking Page Specifics */
-    .booking-main-layout {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .booking-form-container {
-        padding: 0;
-        /* Remove padding to fit screen */
-        border: none;
-        background-color: transparent;
-    }
-
-    .date-time-row {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .calendar-card {
-        padding: 0.75rem;
-    }
-
-    .cal-day-btn {
-        height: 2.5rem;
-        /* Smaller touch targets */
-        width: 2.5rem;
-        font-size: 0.8rem;
-    }
-
-    .time-slot-card {
-        padding: 0.75rem;
-    }
-
-    /* Adjust Session Skill Cards */
-    .skill-cards-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
     }
 
     .skill-card {
