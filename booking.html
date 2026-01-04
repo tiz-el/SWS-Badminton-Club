@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWS Badminton Booking - Reserve Your Spot</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <div class="design-root">
+        <!-- Top Navigation Bar -->
+        <header class="header">
+            <div class="header-container">
+                <!-- Logo -->
+                <div class="logo-wrapper">
+                    <img src="assets/logo/SWS_logo.png" alt="SWS Badminton Club" class="logo-img">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="sessions.html">Sessions</a>
+                    <a class="nav-link active" href="booking.html">Booking</a>
+                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
+
+                <!-- CTA & Mobile Menu Toggle -->
+                <div class="header-actions">
+                    <a href="booking.html" class="btn-primary">Join Now</a>
+                    <!-- Mobile Menu Icon -->
+                    <button class="mobile-menu-toggle">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="sessions-hero-section" style="padding-bottom: 2rem;">
+                <!-- Abstract Glow -->
+                <div class="glow-background"></div>
+
+                <div class="sessions-hero-content">
+                    <div class="booking-header">
+                        <div>
+                            <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 0.5rem;">
+                                <span class="text-primary">SWS</span> Badminton Club
+                            </h1>
+                            <p class="sessions-description" style="color: var(--color-gray-400);">
+                                Book your next session at London's premier social badminton club.
+                            </p>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                            <span class="material-symbols-outlined text-primary">verified</span>
+                            <span style="font-size: 0.875rem; font-weight: 500; color: var(--color-gray-400);">Official
+                                Club Booking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Main Layout -->
+            <div class="booking-main-layout">
+                <!-- Left Column: Pricing -->
+                <div class="pricing-section">
+                    <h2 class="section-title">
+                        <span class="material-symbols-outlined text-primary">payments</span>
+                        Session Rates
+                    </h2>
+
+                    <!-- Card 1 -->
+                    <div class="pricing-card">
+                        <div class="sheen-overlay"></div>
+                        <div class="pricing-header">
+                            <div>
+                                <h3 style="font-weight: 700; font-size: 1.125rem;">Standard Session</h3>
+                                <p style="font-size: 0.875rem; color: var(--color-gray-400);">2 Hours</p>
+                            </div>
+                            <span class="price-badge badge-value">Best Value</span>
+                        </div>
+                        <div class="price-amount">
+                            <span class="big-price">£12</span>
+                            <span style="font-size: 0.875rem; color: var(--color-gray-400);">/ player</span>
+                        </div>
+                        <div class="pricing-note">
+                            <span class="text-primary" style="font-weight: 700;">Note:</span> EC Rate is £15
+                            (Early/Late/Non-member)
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-size: 1.125rem;">check_circle</span>
+                                Feather Shuttles Included
+                            </div>
+                            <div class="feature-item">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-size: 1.125rem;">check_circle</span>
+                                Social Play
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="pricing-card">
+                        <div class="sheen-overlay"></div>
+                        <div class="pricing-header">
+                            <div>
+                                <h3 style="font-weight: 700; font-size: 1.125rem;">Extended Session</h3>
+                                <p style="font-size: 0.875rem; color: var(--color-gray-400);">2.5 Hours</p>
+                            </div>
+                            <span class="price-badge badge-popular">Popular</span>
+                        </div>
+                        <div class="price-amount">
+                            <span class="big-price">£15</span>
+                            <span style="font-size: 0.875rem; color: var(--color-gray-400);">/ player</span>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-size: 1.125rem;">check_circle</span>
+                                Parking Available
+                            </div>
+                            <div class="feature-item">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-size: 1.125rem;">check_circle</span>
+                                Shower Facilities
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="pricing-card">
+                        <div class="sheen-overlay"></div>
+                        <div class="pricing-header">
+                            <div>
+                                <h3 style="font-weight: 700; font-size: 1.125rem;">Marathon Session</h3>
+                                <p style="font-size: 0.875rem; color: var(--color-gray-400);">3 Hours</p>
+                            </div>
+                            <span class="price-badge badge-popular">Hardcore</span>
+                        </div>
+                        <div class="price-amount">
+                            <span class="big-price">£17</span>
+                            <span style="font-size: 0.875rem; color: var(--color-gray-400);">/ player</span>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-size: 1.125rem;">check_circle</span>
+                                Competitive Games
+                            </div>
+                            <div class="feature-item">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-size: 1.125rem;">check_circle</span>
+                                High Intensity
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Form -->
+                <div class="booking-form-container">
+                    <div class="form-header">
+                        <h2 class="section-title">
+                            <span class="material-symbols-outlined text-primary">calendar_add_on</span>
+                            Book a Slot
+                        </h2>
+                        <p style="font-size: 0.875rem; color: var(--color-gray-400); margin-top: 0.25rem;">
+                            Select your preferred venue, date, and time to see availability.
+                        </p>
+                    </div>
+
+                    <div class="form-body">
+                        <!-- Step 1 -->
+                        <div>
+                            <label class="form-label">1. Select Venue</label>
+                            <div class="venue-select-wrapper">
+                                <select class="venue-select">
+                                    <option disabled selected value="">Choose a location</option>
+                                    <option value="elephant">Elephant & Castle</option>
+                                    <option value="balham">Balham-Clapham South</option>
+                                    <option value="norbury">Streatham Vale - Norbury</option>
+                                    <option value="southfields">Southfields</option>
+                                    <option value="battersea">Battersea</option>
+                                </select>
+                                <span class="material-symbols-outlined select-icon">expand_more</span>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 & 3 -->
+                        <div class="date-time-row">
+                            <!-- Calendar -->
+                            <div style="flex: 1;">
+                                <label class="form-label">2. Pick a Date</label>
+                                <div class="calendar-card">
+                                    <div class="calendar-header">
+                                        <button class="calendar-nav-btn">
+                                            <span class="material-symbols-outlined">chevron_left</span>
+                                        </button>
+                                        <span style="font-weight: 700; color: var(--color-white);">January 2026</span>
+                                        <button class="calendar-nav-btn">
+                                            <span class="material-symbols-outlined">chevron_right</span>
+                                        </button>
+                                    </div>
+                                    <div class="calendar-grid">
+                                        <div class="cal-day-header">S</div>
+                                        <div class="cal-day-header">M</div>
+                                        <div class="cal-day-header">T</div>
+                                        <div class="cal-day-header">W</div>
+                                        <div class="cal-day-header">T</div>
+                                        <div class="cal-day-header">F</div>
+                                        <div class="cal-day-header">S</div>
+
+                                        <!-- Days -->
+                                        <button class="cal-day-btn" disabled>28</button>
+                                        <button class="cal-day-btn" disabled>29</button>
+                                        <button class="cal-day-btn" disabled>30</button>
+                                        <button class="cal-day-btn">1</button>
+                                        <button class="cal-day-btn">2</button>
+                                        <button class="cal-day-btn">3</button>
+                                        <button class="cal-day-btn">4</button>
+                                        <button class="cal-day-btn active">5</button>
+                                        <button class="cal-day-btn">6</button>
+                                        <button class="cal-day-btn">7</button>
+                                        <button class="cal-day-btn">8</button>
+                                        <button class="cal-day-btn">9</button>
+                                        <button class="cal-day-btn">10</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Times -->
+                            <div style="flex: 1;">
+                                <label class="form-label">3. Select Time & Duration</label>
+                                <div class="time-slots-wrapper">
+                                    <!-- Slot 1 -->
+                                    <label class="time-slot-label">
+                                        <input type="radio" name="time_slot" class="time-slot-input">
+                                        <div class="time-slot-card">
+                                            <div>
+                                                <span
+                                                    style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-white);">19:00
+                                                    - 21:00</span>
+                                                <span style="font-size: 0.75rem; color: var(--color-gray-400);">2 Hours
+                                                    (Standard)</span>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <span
+                                                    style="display: block; font-weight: 700; color: var(--color-white);">£12.00</span>
+                                                <span style="font-size: 0.625rem; color: var(--color-gray-500);">3 spots
+                                                    left</span>
+                                            </div>
+                                        </div>
+                                        <span class="material-symbols-outlined slot-icon-check">check_circle</span>
+                                    </label>
+
+                                    <!-- Slot 2 -->
+                                    <label class="time-slot-label">
+                                        <input type="radio" name="time_slot" class="time-slot-input" checked>
+                                        <div class="time-slot-card">
+                                            <div>
+                                                <span
+                                                    style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-white);">19:00
+                                                    - 21:30</span>
+                                                <span style="font-size: 0.75rem; color: var(--color-gray-400);">2.5
+                                                    Hours (Extended)</span>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <span
+                                                    style="display: block; font-weight: 700; color: var(--color-white);">£15.00</span>
+                                                <span
+                                                    style="font-size: 0.625rem; color: var(--color-gray-500);">Available</span>
+                                            </div>
+                                        </div>
+                                        <span class="material-symbols-outlined slot-icon-check">check_circle</span>
+                                    </label>
+
+                                    <!-- Slot 3 -->
+                                    <label class="time-slot-label">
+                                        <input type="radio" name="time_slot" class="time-slot-input">
+                                        <div class="time-slot-card">
+                                            <div>
+                                                <span
+                                                    style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-white);">20:00
+                                                    - 23:00</span>
+                                                <span style="font-size: 0.75rem; color: var(--color-gray-400);">3 Hours
+                                                    (Marathon)</span>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <span
+                                                    style="display: block; font-weight: 700; color: var(--color-white);">£17.00</span>
+                                                <span
+                                                    style="font-size: 0.625rem; color: var(--color-gray-500);">Waitlist</span>
+                                            </div>
+                                        </div>
+                                        <span class="material-symbols-outlined slot-icon-check">check_circle</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="booking-footer">
+                        <div class="total-wrapper">
+                            <div class="cart-icon">
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                            </div>
+                            <div>
+                                <p
+                                    style="font-size: 0.75rem; color: var(--color-gray-400); font-weight: 600; text-transform: uppercase;">
+                                    Total to pay</p>
+                                <p style="font-size: 1.5rem; font-weight: 900; color: var(--color-white);">£15.00</p>
+                            </div>
+                        </div>
+                        <button class="btn-book-now">
+                            Book Now
+                            <span class="material-symbols-outlined" style="font-size: 0.875rem;">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Snippet -->
+            <div class="venue-map-snippet">
+                <div class="map-container">
+                    <div class="map-overlay">
+                        <button class="btn-view-map">
+                            <span class="material-symbols-outlined">map</span>
+                            View Venue on Map
+                        </button>
+                    </div>
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxdcU4REM5HtW22a4scT87SbjX9bc3PXLd62WfPk5GkVD0eOn3TrlyLKwIvTU5AhWxpO7oRQ_umcM6IQmF7blGVteetLMXZkxh6AVdkYKLboJr4jxKBh1cs-XAKDLdD0Ku36Qa3Tl4TrmmFAMj9sAwDQchJP1fqiyuVJNAQgK55OVAxGCZk7q7LlVlIqRmx8zuJUpBwXgvKF1HINYzPSChPyPQGrfOZjenu_1KTtQrqJMUP8OgKQnMd1GG0PS0NaLL2Yx7-llRMIHZ"
+                        alt="Badminton court" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h2 class="footer-title">SWS Badminton Club</h2>
+                    <p class="footer-description">
+                        Making badminton accessible, fun, and competitive for everyone in London.
+                    </p>
+                </div>
+
+                <div class="footer-links-wrapper">
+                    <div class="footer-social">
+                        <a class="social-link" href="#">
+                            <span class="sr-only">Instagram</span>
+                            <span class="material-symbols-outlined">photo_camera</span>
+                        </a>
+                        <a class="social-link" href="#">
+                            <span class="sr-only">Facebook</span>
+                            <span class="material-symbols-outlined">public</span>
+                        </a>
+                        <a class="social-link" href="#">
+                            <span class="sr-only">Twitter</span>
+                            <span class="material-symbols-outlined">chat</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+
+                    <p class="footer-copyright">© 2026 SWS Badminton Club. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

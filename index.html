@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWS Badminton Club Homepage</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <div class="design-root">
+        <!-- Top Navigation Bar -->
+        <header class="header">
+            <div class="header-container">
+                <!-- Logo -->
+                <div class="logo-wrapper">
+                    <img src="assets/logo/SWS_logo.png" alt="SWS Badminton Club" class="logo-img">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="sessions.html">Sessions</a>
+                    <a class="nav-link" href="booking.html">Booking</a>
+                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
+
+                <!-- CTA & Mobile Menu Toggle -->
+                <div class="header-actions">
+                    <a href="booking.html" class="btn-primary">Join Now</a>
+                    <!-- Mobile Menu Icon -->
+                    <button class="mobile-menu-toggle">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content-wrapper">
+                    <!-- Background Image with Overlay -->
+                    <div class="hero-background">
+                        <img alt="Badminton Court" class="hero-image" src="assets/services/hero_image.png" />
+                        <div class="hero-overlay-bottom"></div>
+                        <div class="hero-overlay-top"></div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="badge-indicator"></span>
+                            <span class="badge-text">Accepting New Members</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            Welcome to <br />
+                            <span class="hero-title-gradient">SWS Badminton Club</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            Purely Fun, Strictly Social. Join London's premier community for badminton enthusiasts of
+                            all levels.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="booking.html" class="btn-primary btn-large">Join a Session</a>
+                            <a href="about.html" class="btn-secondary btn-large">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section" id="about">
+                <div class="about-container">
+                    <div class="about-grid">
+                        <div class="about-content">
+                            <div class="mission-label">
+                                <span class="mission-line"></span>
+                                <span class="mission-text">Our Mission</span>
+                            </div>
+                            <h2 class="about-title">We Racket the Shuttle!</h2>
+                            <p class="about-description">
+                                If you are looking for a purely FUN CLUB to enjoy good games of badminton with and to
+                                meet like-minded individuals,
+                                look no further as this club is EXACTLY THAT AND MORE!!. We are truly a social club. I
+                                set up this club purely to have fun and enjoy the sport of badminton and other fun
+                                social activities.
+                            </p>
+                            <p class="about-description">
+                                We started SWS with a simple mission: to create a space where competitive sport meets
+                                genuine friendship. Unlike other clubs that prioritize drills over thrills, we balance
+                                high-quality games with a relaxed, welcoming atmosphere.
+                            </p>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">100+</div>
+                                    <div class="stat-label">Active Students</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5+</div>
+                                    <div class="stat-label">Pro Coaches</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image-wrapper">
+                            <div class="about-image-container">
+                                <img src="assets/services/sws_about.png" alt="SWS Badminton Training"
+                                    class="about-image">
+                            </div>
+                            <div class="about-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Events Section -->
+            <section class="events-section" id="sessions">
+                <div class="events-container">
+                    <!-- Header -->
+                    <div class="events-header">
+                        <div class="events-title-wrapper">
+                            <h2 class="events-title">Upcoming Sessions</h2>
+                            <p class="events-subtitle">Join us for a game, coaching, or social event.</p>
+                        </div>
+                        <div class="events-actions">
+                            <div class="search-wrapper">
+                                <input type="text" class="search-input" placeholder="Search events..." />
+                                <span class="material-symbols-outlined search-icon">search</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="filters-bar">
+                        <div class="filter-chip filter-chip-active">All</div>
+                        <div class="filter-chip filter-chip-default">Coaching</div>
+                        <div class="filter-chip filter-chip-default">Social Play</div>
+                        <div class="filter-chip filter-chip-default">Tournaments</div>
+
+                        <div class="filter-nav">
+                            <button class="nav-btn" disabled style="opacity: 0.5;">
+                                <span class="material-symbols-outlined">chevron_left</span>
+                            </button>
+                            <button class="nav-btn">
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Events Grid -->
+                    <div class="events-grid">
+                        <!-- Card 1 -->
+                        <div class="event-card">
+                            <div class="event-image-container">
+                                <div class="event-image"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuALBKT0xO2o5dFmmUXfM28QG1Knyt_4SVpEJNHxx_sVXA-3tnMq422nHqz0c3gMFZDHSq4SuQhbAFqths3uIernLMdRKk7pC0VhN3ZTMR7RI_ZUGf-M8nbKGBYi7rv2oBAzw6gmtVGUjQ3SdayVBHgGpio5u6v5w35lmcbZj_Rt261SZtfJ45ZAdGTH7DU2qGOLZT0CbrjuuQtrNN452pEKOYPPe-jAZ11S0SXnb9gxW7Qo273eSYnuQBc3VV5dezO_hl_S4Pux86rV');">
+                                </div>
+                                <div class="event-overlay"></div>
+                                <div class="date-badge">
+                                    <span class="date-month">JAN</span>
+                                    <span class="date-day">04</span>
+                                </div>
+                                <div class="event-tag tag-coaching">Coaching</div>
+                            </div>
+                            <div class="event-content">
+                                <h3 class="event-title">Sunday Improver Coaching</h3>
+                                <div class="event-details">
+                                    <div class="detail-item">
+                                        <span class="material-symbols-outlined detail-icon">schedule</span>
+                                        <span class="detail-text">2:30 PM - 4:30 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="material-symbols-outlined detail-icon">location_on</span>
+                                        <span class="detail-text">Central London Courts</span>
+                                    </div>
+                                </div>
+                                <div class="event-footer">
+                                    <div class="price-wrapper">
+                                        <span class="price">£17.00</span>
+                                        <span class="availability text-orange">
+                                            <span class="dot bg-orange"></span>
+                                            3 spots left
+                                        </span>
+                                    </div>
+                                    <button class="btn-register">Register</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="event-card">
+                            <div class="event-image-container">
+                                <div class="event-image"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDX6BIiP2LkwI4LxBGRSir-ebvMlFkyYDsAfpO_VmtJrEGK26w3olQYI2-l7AyUBGhiD4_fCfxKUKWfzkE5UYS69zZL2Hq5vCxHNZRLkBgPqhisaRKtR2zDsrjf2F7VzytTRrepAM3vh_45h90yl6zz_5VwtXZaWUC48X76REOE0gD4sm69jmLBXVrhIjn9S8Ohi-JfxSfsMXKWD_043IKMU0myyjhC-3uVRYUNzyRrjycFCEKJBdVICf-jJWdL01hVDMJiZtHOCT3B');">
+                                </div>
+                                <div class="event-overlay"></div>
+                                <div class="date-badge">
+                                    <span class="date-month">JAN</span>
+                                    <span class="date-day">06</span>
+                                </div>
+                                <div class="event-tag tag-social">Social</div>
+                            </div>
+                            <div class="event-content">
+                                <h3 class="event-title">Tuesday Social Night</h3>
+                                <div class="event-details">
+                                    <div class="detail-item">
+                                        <span class="material-symbols-outlined detail-icon">schedule</span>
+                                        <span class="detail-text">7:00 PM - 9:00 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="material-symbols-outlined detail-icon">location_on</span>
+                                        <span class="detail-text">East London Center</span>
+                                    </div>
+                                </div>
+                                <div class="event-footer">
+                                    <div class="price-wrapper">
+                                        <span class="price">£12.00</span>
+                                        <span class="availability text-emerald">
+                                            <span class="dot bg-emerald"></span>
+                                            Open availability
+                                        </span>
+                                    </div>
+                                    <button class="btn-rsvp">RSVP</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="event-card">
+                            <div class="event-image-container">
+                                <div class="event-image"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXL6LQ6x1ZADKymiXarT8sONz8FyQOpElhV4xnHf886OqjXUsot2S952fNsfgdm13J0AZRoXyOdjMqaw0MqvGHuKFNH_kurlP6NpeiZYlDowIsljahNGZOeaJDg6vURcN3mGz5JK92DFhUtlOZB005oJkatB6gHfKqL3CA2-iQIAP9NWBlCG2x4SxYaXZ5UNO7I1nUz-SuthFnAAw3jy6Lb8pR7liW-7d7TVDknQjcubDFJhDNU50ZdXAEAg4WNVHEM97CqPi-fmEt');">
+                                </div>
+                                <div class="event-overlay"></div>
+                                <div class="date-badge">
+                                    <span class="date-month">JAN</span>
+                                    <span class="date-day">08</span>
+                                </div>
+                                <div class="event-tag tag-competitive">Competitive</div>
+                            </div>
+                            <div class="event-content">
+                                <h3 class="event-title">Advanced Singles Ladder</h3>
+                                <div class="event-details">
+                                    <div class="detail-item">
+                                        <span class="material-symbols-outlined detail-icon">schedule</span>
+                                        <span class="detail-text">8:00 PM - 10:00 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="material-symbols-outlined detail-icon">location_on</span>
+                                        <span class="detail-text">Stratford Arena</span>
+                                    </div>
+                                </div>
+                                <div class="event-footer">
+                                    <div class="price-wrapper">
+                                        <span class="price">£15.00</span>
+                                        <span class="availability text-gray">
+                                            <span class="dot bg-gray"></span>
+                                            Full - Join Waitlist
+                                        </span>
+                                    </div>
+                                    <button class="btn-waitlist">Waitlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer / CTA -->
+                    <div class="events-notification">
+                        <div class="notify-content">
+                            <h4 class="notify-title">Don't see a time that works?</h4>
+                            <p class="events-subtitle">We add new sessions weekly. Sign up for alerts to grab your spot
+                                early.</p>
+                        </div>
+                        <button class="notify-btn">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <span>Get Notified</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feature Section -->
+            <section class="features-section">
+                <div class="features-container">
+                    <div class="features-header">
+                        <div class="features-header-content">
+                            <h2 class="features-title">
+                                London's Premier <span class="text-primary">Social Club</span>
+                            </h2>
+                            <p class="features-description">
+                                Experience the best badminton community in the city. We offer more than just games; we
+                                offer a lifestyle.
+                            </p>
+                        </div>
+                        <a class="features-link" href="#">View All Services →</a>
+                    </div>
+
+                    <div class="features-grid">
+                        <!-- Card 1 -->
+                        <div class="feature-card">
+                            <div class="card-glow"></div>
+                            <div class="card-icon">
+                                <span class="material-symbols-outlined">groups</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Social Play</h3>
+                                <p class="card-description">
+                                    Join our friendly weekly sessions open to all levels. Great vibes, competitive
+                                    matches, and post-game socials.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="feature-card">
+                            <div class="card-glow"></div>
+                            <div class="card-icon">
+                                <span class="material-symbols-outlined">emoji_events</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Professional Training</h3>
+                                <p class="card-description">
+                                    Improve your game with expert coaching and drills. From beginner basics to advanced
+                                    tournament tactics.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="feature-card">
+                            <div class="card-glow"></div>
+                            <div class="card-icon">
+                                <span class="material-symbols-outlined">build</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Racket Stringing</h3>
+                                <p class="card-description">
+                                    Fast and professional stringing services for your gear. We use top-tier strings to
+                                    ensure maximum performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="features-link-mobile">
+                        <a href="#">View All Services →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Booking Widget Section -->
+            <section class="booking-widget-section">
+                <div class="booking-widget-container">
+                    <div class="widget-header-group">
+                        <div class="widget-title-block">
+                            <h2 class="features-title">Book a Session</h2>
+                            <p class="features-description" style="max-width: none;">Select your preferred venue and
+                                time slot.</p>
+                        </div>
+
+                        <!-- Chips -->
+                        <div class="widget-chip-scroll">
+                            <button class="widget-filter-btn filter-btn-active">All Venues</button>
+                            <button class="widget-filter-btn filter-btn-outline">Charing Cross</button>
+                            <button class="widget-filter-btn filter-btn-outline">Waterloo</button>
+                            <button class="widget-filter-btn filter-btn-outline">Canary Wharf</button>
+                        </div>
+                    </div>
+
+                    <div class="widget-calendar-container">
+                        <!-- Date Nav -->
+                        <div class="strip-nav">
+                            <button class="calendar-nav-btn">
+                                <span class="material-symbols-outlined">chevron_left</span>
+                            </button>
+                            <div class="strip-nav-title">
+                                <span class="material-symbols-outlined text-primary">calendar_month</span>
+                                <span>January 2026</span>
+                            </div>
+                            <button class="calendar-nav-btn">
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </button>
+                        </div>
+
+                        <!-- Calendar Strip -->
+                        <div class="strip-grid">
+                            <!-- Mon -->
+                            <div class="day-col">
+                                <span class="day-label">Mon</span>
+                                <div class="day-number-box">23</div>
+                            </div>
+                            <!-- Tue -->
+                            <div class="day-col">
+                                <span class="day-label">Tue</span>
+                                <div class="day-number-box">24</div>
+                            </div>
+                            <!-- Wed -->
+                            <div class="day-col">
+                                <span class="day-label" style="color: var(--color-primary);">Wed</span>
+                                <div class="day-number-box active">25</div>
+                            </div>
+                            <!-- Thu -->
+                            <div class="day-col">
+                                <span class="day-label">Thu</span>
+                                <div class="day-number-box">26</div>
+                            </div>
+                            <!-- Fri -->
+                            <div class="day-col">
+                                <span class="day-label">Fri</span>
+                                <div class="day-number-box">27</div>
+                            </div>
+                            <!-- Sat -->
+                            <div class="day-col">
+                                <span class="day-label">Sat</span>
+                                <div class="day-number-box">28</div>
+                            </div>
+                            <!-- Sun -->
+                            <div class="day-col">
+                                <span class="day-label">Sun</span>
+                                <div class="day-number-box">29</div>
+                            </div>
+                        </div>
+
+                        <!-- Sessions Grid -->
+                        <div class="sessions-widget-grid">
+                            <!-- Card 1 -->
+                            <div class="widget-card active-card">
+                                <div class="check-badge">
+                                    <span class="material-symbols-outlined" style="font-size: 1rem;">check</span>
+                                </div>
+                                <div class="widget-card-image"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAd4zP61eCfjbSD7jiSyalBHmLWLWZ0oGCsOp9r5KTaEBctB44KhsG9aLKlYzAC1S2Th4Jv79K2c7dGZw7mRYFKZcs5bt2VcjXedp5mtLNQcq6elz8Nv0PJdUcUdxncZIABoh3WKmtU5oGfLDBFc10Um3AVw8KSeWhNwa_km0CAmtSogVHMHjSgi4ifPDJM9wNVKeZSe6V9CiP-3r0fc9hPhO6AzNqcU536YDtRJyGow68oPpSov5RoI4OjRV8cTGy2FLW-8-QE-ogw');">
+                                    <div class="widget-overlay"></div>
+                                    <div class="widget-card-title-group">
+                                        <p style="font-size: 0.75rem; font-weight: 500; text-transform: uppercase;">
+                                            Charing Cross</p>
+                                        <h3 style="font-size: 1.125rem; font-weight: 700;">Wed Social</h3>
+                                    </div>
+                                </div>
+                                <div class="widget-card-content">
+                                    <div class="widget-info-row">
+                                        <div class="widget-meta">
+                                            <div class="meta-item">
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 1rem;">schedule</span>
+                                                <span>7:00 PM - 9:00 PM</span>
+                                            </div>
+                                            <div class="meta-item meta-spots">
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 1rem;">group</span>
+                                                <span>4 spots left</span>
+                                            </div>
+                                        </div>
+                                        <div class="widget-price" style="color: var(--color-primary);">£12.00</div>
+                                    </div>
+                                    <a href="booking.html" class="widget-btn btn-added"
+                                        style="text-decoration: none;">Added to Cart</a>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="widget-card">
+                                <div class="widget-card-image"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1kBTQiq2H_C0WaCVwTvlu1CFZF5rNfsdiS8Q_ENYhTQMubF_uIgX6gifeHaKvSXfSndHsfJc_OVISNQ_JAtdM6aVWRLv7H153FcZF-ijIfJ3zHacyyoNFOtYb9wlSNgME4uBc3LFybJs9CTDYjjZvjptQI3FDdTTJgc5L1Y32lclON6c4nM1WPApzag5lQjTQTOAQ28Br8e6kRIF9grtW0jtYV_ZCAHdSsJk3LfgM2475H3OxdBekqiXebRLmzTfqUxkqhzp6v_sO');">
+                                    <div class="widget-overlay"></div>
+                                    <div class="widget-card-title-group">
+                                        <p style="font-size: 0.75rem; font-weight: 500; text-transform: uppercase;">
+                                            Waterloo</p>
+                                        <h3 style="font-size: 1.125rem; font-weight: 700;">Wed Competitive</h3>
+                                    </div>
+                                </div>
+                                <div class="widget-card-content">
+                                    <div class="widget-info-row">
+                                        <div class="widget-meta">
+                                            <div class="meta-item">
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 1rem;">schedule</span>
+                                                <span>8:00 PM - 10:00 PM</span>
+                                            </div>
+                                            <div class="meta-item meta-spots none">
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 1rem;">group</span>
+                                                <span>12 spots left</span>
+                                            </div>
+                                        </div>
+                                        <div class="widget-price">£15.00</div>
+                                    </div>
+                                    <a href="booking.html" class="widget-btn btn-add" style="text-decoration: none;">
+                                        <span class="material-symbols-outlined" style="font-size: 1.125rem;">add</span>
+                                        Add Session
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="widget-card">
+                                <div class="widget-card-image"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcvUZldYmkJLOC_EwtnsRLqA5AgmoVODxBjJZ6mu3e48bCVsvA-SVj-dxYGKdJucK6xr5ANuCQCrbUVxfaNYTUk1R4OVJnQnibYj4pbISD8h4mL45FfqWqlTc263o1mxKxQZ3wctW6rDZoiho1el-zyaXLFiHdiQSN_J3icayHFflVJBnL6LKi8KlRjU2gJlxHTWwi-BPDqa-lB6Ae0cyxTMV_blUH7V3XfTj7G36Tdal4tAlObgsCfBsL8Av7KWqGjtpo9j4rLrot');">
+                                    <div class="widget-overlay"></div>
+                                    <div class="widget-card-title-group">
+                                        <p style="font-size: 0.75rem; font-weight: 500; text-transform: uppercase;">
+                                            Canary Wharf</p>
+                                        <h3 style="font-size: 1.125rem; font-weight: 700;">Beginner Training</h3>
+                                    </div>
+                                </div>
+                                <div class="widget-card-content">
+                                    <div class="widget-info-row">
+                                        <div class="widget-meta">
+                                            <div class="meta-item">
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 1rem;">schedule</span>
+                                                <span>6:00 PM - 7:30 PM</span>
+                                            </div>
+                                            <div class="meta-item meta-spots low">
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 1rem;">group</span>
+                                                <span>2 spots left</span>
+                                            </div>
+                                        </div>
+                                        <div class="widget-price">£14.00</div>
+                                    </div>
+                                    <a href="booking.html" class="widget-btn btn-add" style="text-decoration: none;">
+                                        <span class="material-symbols-outlined" style="font-size: 1.125rem;">add</span>
+                                        Add Session
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="widget-card disabled">
+                                <div class="fully-booked-badge">Fully Booked</div>
+                                <div class="widget-card-image"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD0Kz-n-KtOp44dV--yqvrxyGjCohVSgSvRt85n6NrVJBWa44qgyfvPtkpHk6waHMu024KkiO_Y-Y3igZFx57i4umwCH6XJcbdbvzb7ZRWmiTmQuOhBTDtxREEYJEWumUqULDgeaRY8x9Fq0STHqWPs8nyHidjuXlNlAKprUCplqx7BQbLNdabsDuIRPGYGx5cJbENhb36EkuSdrOQcFKZMb9g8JSSgrivHjtr2oCHXUSduFBlH7pM67mliiEcbyCcpfmXegkbXplHA');">
+                                    <div class="widget-overlay" style="background: rgba(0,0,0,0.6);"></div>
+                                    <div class="widget-card-title-group" style="opacity: 0.5;">
+                                        <p style="font-size: 0.75rem; font-weight: 500; text-transform: uppercase;">
+                                            Waterloo</p>
+                                        <h3 style="font-size: 1.125rem; font-weight: 700;">League Match</h3>
+                                    </div>
+                                </div>
+                                <div class="widget-card-content">
+                                    <div class="widget-info-row" style="color: var(--color-gray-500);">
+                                        <div class="widget-meta">
+                                            <div class="meta-item" style="color: inherit;">
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 1rem;">schedule</span>
+                                                <span>7:30 PM - 9:30 PM</span>
+                                            </div>
+                                            <div class="meta-item" style="color: inherit;">
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 1rem;">group_off</span>
+                                                <span>0 spots left</span>
+                                            </div>
+                                        </div>
+                                        <div class="widget-price" style="color: inherit; opacity: 0.5;">£12.00</div>
+                                    </div>
+                                    <button class="widget-btn" disabled
+                                        style="background-color: transparent; border: 1px solid #483d52; color: var(--color-gray-500); cursor: not-allowed;">
+                                        Join Waitlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h2 class="footer-title">SWS Badminton Club</h2>
+                    <p class="footer-description">
+                        Making badminton accessible, fun, and competitive for everyone in London.
+                    </p>
+                </div>
+
+                <div class="footer-links-wrapper">
+                    <div class="footer-social">
+                        <a class="social-link" href="#">
+                            <span class="sr-only">Instagram</span>
+                            <span class="material-symbols-outlined">photo_camera</span>
+                        </a>
+                        <a class="social-link" href="#">
+                            <span class="sr-only">Facebook</span>
+                            <span class="material-symbols-outlined">public</span>
+                        </a>
+                        <a class="social-link" href="#">
+                            <span class="sr-only">Twitter</span>
+                            <span class="material-symbols-outlined">chat</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+
+                    <p class="footer-copyright">© 2026 SWS Badminton Club. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
